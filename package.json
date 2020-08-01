@@ -1,0 +1,22 @@
+{
+  "name": "dev-challenges",
+  "version": "1.0.0",
+  "description": "💪challenge path\r #RESPONSIVE WEB DEVELOPER\r #The only way to become a web developer is to start building websites with real-life practices. If you want to be a better developer, practice your development skills or learn to work with other developers, this challenge is for you.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anita-joseph/Dev-challenges.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anita-joseph/Dev-challenges/issues"
+  },
+  "homepage": "https://github.com/Anita-joseph/Dev-challenges#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
