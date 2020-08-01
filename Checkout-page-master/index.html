@@ -5,24 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 
-    <link rel="icon" href="./img/icone.png">
+    <link rel="icon" href="../icone.png">
     <link rel="stylesheet" href="./styles/index.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Dev Challenges | Checkout page</title>
-
 </head>
 
 <body>
-
     <section class="header">
         <h1> Checkout</h1>
     </section>
+    <div class="main__container">
+        <form action="/action_page.php">
+            <fieldset>
+                <h2>Contact Information</h2>
+                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <label for="phone"><i class="fa fa-phone"></i>Phone</label>
+                <input type="telephone" id="phone" name="phone" placeholder="Enter your phone">
+            </fieldset>
+            <fieldset>
+                <h2>Shipping address</h2>
+                <label for="fname"><i class="fa fa-user"></i> First name</label>
+                <input type="fname" id="fname" name="fname" placeholder="Rodney Cotton">
+                <label for="address"><i class="fa fa-home"></i>Address</label>
+                <input type="address" id="address" name="address" placeholder="Your address">
+                <label for="city"><i class="fa fa-building"></i>City</label>
+                <input type="city" id="city" name="city" placeholder="Your city">
+                <div class="row">
+                    <label for="country"><i class="fa fa-globe"></i>Country</label>
+                    <input type="country" id="country" name="country" placeholder="Your country"><i class="fa fa-angle-down"></i>
+                    <label for="country"><i class="fa fa-building"></i>Postal code</label>
+                    <input type="country" id="country" name="country" placeholder="Your code postal">
+                </div>
+            </fieldset>
+            <input type="checkbox" name="" value="1" checked>Save this information for next time
+            <button>Continue</button>
+        </form>
+    </div>
+    <div class="cart__container">
 
+    </div>
     <footer class="footer">
         Anita JOSEPH @<a href="https://devchallenges.io/"> Dev Challenges</a>
     </footer>
-
+    <script src="index.js"></script>
 </body>
 
 </html>
