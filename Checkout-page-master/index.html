@@ -18,40 +18,75 @@
         <h1> Checkout</h1>
     </section>
     <div class="main__container">
-        <form action="/action_page.php">
+        <div class="cart__container">
+            <div class="first__item">
+                <img src="./img/photo1.png" alt="Vintage Backbag />
+                <div class=" price__block ">
+                    <h4>Vintage Backbag</h4>
+                    <price>$54,99</price>
+                    <strike>
+				<price>$94,99</price>
+				</strike>
+                </div>
+                <div class="counter__block "><button class="minus__counter ">-</button>
+                    <p>1</p>
+                    <button class="additional__counter ">+</button>
+                </div>
+            <div class="second__item ">
+                <img src="./img/photo2.png " alt="Levi Shoes />
+                <div class=" price__block ">
+                    <h4>Levi Shoes</h4>
+                    <p class="price ">$54,99</p>
+                    <p class="price "><s>$94,99</s></p>
+                </div>
+                <div class="counter__block "><button class="minus__counter ">-</button>
+                    <p>1</p>
+                    <button class="additional__counter ">+</button>
+                </div>
+
+            </div>
+            <h5>Shipping</h5>
+            <p class="amount">
+                $19
+            </p>
+            <hr>
+            <h5>Total</h5>
+            <p class="total__amount">$148,99</p>
+
+        </div>
+    </div>
+    <div class="form__container ">
+        <form action="/action_page.php ">
             <fieldset>
                 <h2>Contact Information</h2>
-                <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email">
-                <label for="phone"><i class="fa fa-phone"></i>Phone</label>
-                <input type="telephone" id="phone" name="phone" placeholder="Enter your phone">
+                <label for="email "><i class="fa fa-envelope "></i> Email</label>
+                <input type="email " id="email " name="email " placeholder="Enter your email ">
+                <label for="phone "><i class="fa fa-phone "></i>Phone</label>
+                <input type="telephone " id="phone " name="phone " placeholder="Enter your phone ">
             </fieldset>
             <fieldset>
                 <h2>Shipping address</h2>
-                <label for="fname"><i class="fa fa-user"></i> First name</label>
-                <input type="fname" id="fname" name="fname" placeholder="Rodney Cotton">
-                <label for="address"><i class="fa fa-home"></i>Address</label>
-                <input type="address" id="address" name="address" placeholder="Your address">
-                <label for="city"><i class="fa fa-building"></i>City</label>
-                <input type="city" id="city" name="city" placeholder="Your city">
-                <div class="row">
-                    <label for="country"><i class="fa fa-globe"></i>Country</label>
-                    <input type="country" id="country" name="country" placeholder="Your country"><i class="fa fa-angle-down"></i>
-                    <label for="country"><i class="fa fa-building"></i>Postal code</label>
-                    <input type="country" id="country" name="country" placeholder="Your code postal">
+                <label for="fname "><i class="fa fa-user "></i> First name</label>
+                <input type="fname " id="fname " name="fname " placeholder="Rodney Cotton ">
+                <label for="address "><i class="fa fa-home "></i>Address</label>
+                <input type="address " id="address " name="address " placeholder="Your address ">
+                <label for="city "><i class="fa fa-building "></i>City</label>
+                <input type="city " id="city " name="city " placeholder="Your city ">
+                <div class="row ">
+                    <label for="country "><i class="fa fa-globe "></i>Country</label>
+                    <input type="country " id="country " name="country " placeholder="Your country "><i class="fa fa-angle-down "></i>
+                    <label for="country "><i class="fa fa-building "></i>Postal code</label>
+                    <input type="country " id="country " name="country " placeholder="Your code postal ">
                 </div>
             </fieldset>
-            <input type="checkbox" name="" value="1" checked>Save this information for next time
+            <input type="checkbox " name=" " value="1 " checked>Save this information for next time
             <button>Continue</button>
         </form>
     </div>
-    <div class="cart__container">
-
-    </div>
-    <footer class="footer">
-        Anita JOSEPH @<a href="https://devchallenges.io/"> Dev Challenges</a>
+    <footer class="footer ">
+        Anita JOSEPH @<a href="https://devchallenges.io/ "> Dev Challenges</a>
     </footer>
-    <script src="index.js"></script>
+    <script src="index.js "></script>
 </body>
 
 </html>

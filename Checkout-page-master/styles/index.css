@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main__container {
+    /* max-width: 100%;
+    max-height: 100vh; */
+    width: 383px;
+    height: 535px;
+    position: absolute;
+    left: 817px;
+    top: 170px;
+    /* Gray 6 */
+    background: #F2F2F2;
+    border-radius: 12px;
+}
+
+.form__container {
+    position: absolute;
+    width: 162px;
+    height: 535px;
+    position: absolute;
+    left: 817px;
+    top: 170px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    /* Gray 1 */
+    color: #333333;
+    transform: rotate(-0.02deg);
+}
+
+.cart__container {
+    position: relative;
+}
+
+.cart__container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.cart__container .first__item,
+.cart__container .second__item {
+    display: flex;
+    justify-content: space-evenly;
+}
