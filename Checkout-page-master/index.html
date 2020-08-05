@@ -21,15 +21,15 @@
     <div class="container main__container">
         <div class="cart__container">
             <div class="first__item flex text-center px-4 py-2 m-2">
-                <img class="flex-initial object-contain h-48 " src="./img/photo1.png" alt="Vintage Backbag" />
+                <img class="flex-initial object-contain h-48" src="./img/photo1.png" alt="Vintage Backbag" />
                 <div class="flex-1 px-12 price__block">
                     <h4 class="font-bold">Vintage Backbag</h4>
                     <p class="price">$54,99
                         <s>$94,99</s></p>
                     <div class="counter__block">
-                        <button id="minus__counter" class="px-3 font-bold minus__counter">-</button>
-                        <p id="counter">1</p>
-                        <button id="additional__counter" class="px-3 font-bold additional__counter">+</button>
+                        <button id="first__minus__counter" class="px-3 font-bold minus__counter">-</button>
+                        <p id="first__counter">1</p>
+                        <button id="first__additional__counter" class="px-3 font-bold additional__counter">+</button>
                     </div>
                 </div>
             </div>
@@ -39,9 +39,9 @@
                     <h4 class="font-bold">Levi Shoes</h4>
                     <p class="price">$54,99 <s>$94,99</s></p>
                     <div class="counter__block">
-                        <button id="minus__counter" class="px-3 font-bold minus__counter">-</button>
-                        <p id="counter">1</p>
-                        <button id="additional__counter" class="px-3 font-bold additional__counter">+</button>
+                        <button id="second__minus__counter" class="px-3 font-bold minus__counter">-</button>
+                        <p id="second__counter">1</p>
+                        <button id="second__additional__counter" class="px-3 font-bold additional__counter">+</button>
                     </div>
                 </div>
             </div>
@@ -64,19 +64,19 @@
             </div>
             <div class="border-t-2 border-black"></div>
         </div>
-        <form class="form__container">
+        <form name="checkForm" class="form__container">
             <fieldset>
                 <h2>Contact Information</h2>
                 <div class="mb-4">
                     <label class="block text-sm font-bold mb-2" for="email">Email</label>
-                    <input class="relative shadow appearance-none z-2 border rounded w-full py-2 px-8 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Enter your email...">
+                    <input class="relative shadow appearance-none z-2 border rounded w-full py-2 px-8 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Enter your email..." required>
                     <i class="absolute transform -translate-y-6 h-8 w-8 mx-2 z-3 fa fa-envelope icon"></i>
                 </div>
                 <div class="mb-4">
                     <label class="block text-sm font-bold mb-2" for="phone">
 							Telephone
 						</label>
-                    <input class="relative shadow z-2 appearance-none border rounded w-full py-2 px-6 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="phone" type="telephone" placeholder="Enter your phone number">
+                    <input class="relative shadow z-2 appearance-none border rounded w-full py-2 px-6 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="phone" type="telephone" placeholder="Enter your phone number" required>
                     <i class="absolute transform -translate-y-6 h-8 w-8 mx-2 z-3 fa fa-phone icon"></i>
                 </div>
             </fieldset>
@@ -84,17 +84,17 @@
                 <h2>Shipping address</h2>
                 <div class="mb-4">
                     <label class="block text-gray-700 text-sm font-bold mb-2" for="fname">Full name</label>
-                    <input class="relative z-2 shadow appearance-none border rounded w-full py-2 px-6 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="fname" type="text" placeholder="Rodney Cotton">
+                    <input class="relative z-2 shadow appearance-none border rounded w-full py-2 px-6 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="fname" type="text" placeholder="Rodney Cotton" required>
                     <i class="absolute transform -translate-y-6 h-8 w-8 mx-2 z-3 fa fa-user icon"></i>
                 </div>
                 <div class="mb-4">
                     <label class="block text-gray-700 text-sm font-bold mb-2" for="address">Address</label>
-                    <input class="relative z-2 shadow appearance-none border rounded w-full py-2 px-6 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="address" type="text" placeholder="Your Address">
+                    <input class="relative z-2 shadow appearance-none border rounded w-full py-2 px-6 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="address" type="text" placeholder="Your Address" required>
                     <i class="absolute transform -translate-y-6 h-8 w-8 mx-2 z-3 fa fa-home icon"></i>
                 </div>
                 <div class="mb-4">
                     <label class="block text-sm font-bold mb-2" for="city">City</label>
-                    <input class="relative z-2 shadow appearance-none border rounded w-full py-2 px-6 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="city" type="text" placeholder="Your City">
+                    <input class="relative z-2 shadow appearance-none border rounded w-full py-2 px-6 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="city" type="text" placeholder="Your City" required>
                     <i class="absolute transform -translate-y-6 h-8 w-8 mx-2 z-3 fa fa-building icon"></i>
                 </div>
                 <div class="flex flex-wrap -mx-3 mb-6">
@@ -123,8 +123,8 @@
             </fieldset>
             <div class="md:flex md:items-left mb-6">
                 <div class="md:flex-initial"></div>
-                <label class="md:flex-1 block text-gray-500 font-bold">
-					<input class="mr-2 leading-tight" type="checkbox">
+                <label for="save" class="md:flex-1 block text-gray-500 font-bold">
+					<input class="mr-2 leading-tight" name="save" type="checkbox">
 					<span class="text-sm">Save this information for next time</span>
 				</label>
             </div>
