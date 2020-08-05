@@ -30,13 +30,14 @@ secondaddBtn.addEventListener("click", function(e) {
     secondCounter.innerText = scount;
 }, false);
 
-const checkForm = function(form) {
+var name = document.forms["checkForm"]["fname"].value;
+var email = document.forms["checkForm"]["email"].value;
 
-    if (form.save.checked && (form.fname.value == "")) {
-        alert("Error: error message");
-        form.fname.focus();
+function checkform() {
+    if (name == "" || email == "") {
+        document.checkForm.email.focus();
         return false;
-    }
-    alert("Success!");
+    } else
+        document.getElementById("checkForm").submit();
     return true;
-};
+}

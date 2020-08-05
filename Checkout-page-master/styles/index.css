@@ -229,12 +229,3 @@
                     width: 100%;
                 }
             }
-            /* Input validation styles */
-            
-            input:invalid {
-                border: 2px dashed red;
-            }
-            
-            input:valid {
-                border: 1px solid black;
-            }
