@@ -1,37 +1,42 @@
-// toggle between hiding and showing the dropdown content * /
+var fcount = 0,
+    scount = 0;
+var firstsubBtn = document.getElementById("first__minus__counter");
+var firstaddBtn = document.getElementById("first__additional__counter");
+var firstCounter = document.getElementById("first__counter");
+var secondCounter = document.getElementById("second__counter");
 
-// function myFunction() {
-//     document.getElementById("myDropdown").classList.toggle("show");
-// }
+var secondsubBtn = document.getElementById("second__minus__counter");
+var secondaddBtn = document.getElementById("second__additional__counter");
 
-// Close the dropdown menu if the user clicks outside of it
-// window.onclick = function(event) {
-//     if (!event.target.matches('.dropbtn')) {
-//         var dropdowns = document.getElementsByClassName("dropdown-content");
-//         var i;
-//         for (i = 0; i < dropdowns.length; i++) {
-//             var openDropdown = dropdowns[i];
-//             if (openDropdown.classList.contains('show')) {
-//                 openDropdown.classList.remove('show');
-//             }
-//         }
-//     }
-// }
-
-var count = 0;
-var subtractBtn = document.getElementById("minus__counter");
-var addBtn = document.getElementById("additional__counter");
-var counterelement = document.getElementById("counter");
-
-var result = document.querySelector(".cart__container > div > button")
-
-subtractBtn.addEventListener("click", function(e) {
-    count--;
-    counterelement.textContent = count;
+firstsubBtn.addEventListener("click", function(e) {
+    fcount--;
+    firstCounter.textContent = fcount;
 }, false);
 
 
-addBtn.addEventListener("click", function(e) {
-    count++;
-    counter.innerText = count;
+firstaddBtn.addEventListener("click", function(e) {
+    fcount++;
+    firstCounter.innerText = fcount;
 }, false);
+
+secondsubBtn.addEventListener("click", function(e) {
+    scount--;
+    secondCounter.textContent = scount;
+}, false);
+
+
+secondaddBtn.addEventListener("click", function(e) {
+    scount++;
+    secondCounter.innerText = scount;
+}, false);
+
+const checkForm = function(form) {
+
+    if (form.save.checked && (form.fname.value == "")) {
+        alert("Error: error message");
+        form.fname.focus();
+        return false;
+    }
+    alert("Success!");
+    return true;
+};
