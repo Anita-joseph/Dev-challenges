@@ -7,17 +7,15 @@
 
     <link rel="icon" href="../icone.png">
     <link rel="stylesheet" href="./styles/index.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <title>Dev Challenges | Edie homepage</title>
 </head>
 
 <body>
     <div class="main">
         <header>
-            <h1>Edie</h1>
-            <nav>
+            <h1 class="logo">Edie</h1>
+            <nav class="navigation">
                 <li>Home</li>
                 <li>Services</li>
                 <li>Our works</li>
@@ -30,103 +28,120 @@
             <img src="./img/heroImage.jpg" />
         </section>
         <section class="section__two">
-            <h1>Story, emotion and purpose</h1>
+            <h2>Story, emotion and purpose</h2>
             <p>We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.</p>
-        </section>
-        <section>
-            <form>
-                <label>Want us to contact you?</label>
-                <input type="text" name="email"></form>
+            <div class="txtInput">
+                <form>
+                    <label>Want us to contact you?</label>
+                    <input type="text" name="email">
+                    <button>Join</button>
+                    </input>
+                </form>
+            </div>
         </section>
         <section class="section__three">
-            <h1>Want us to contact you?</h1>
+            <h2>We offer high demand and services</h2>
             <div class="grids">
                 <div class="grid">
-                    <i class="fa fa-icon"></i>
+                    <div class="box box1"><i class="fa fa-pencil"></i></div>
                     <h2>UX/UI Design</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
                     <button>Get started</button>
                 </div>
                 <div class="grid">
-                    <i class="fa fa-icon"></i>
+                    <div class="box box2"><i class="fa fa-code"></i></div>
                     <h2>Front End</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
                     <button>Get started</button>
                 </div>
                 <div class="grid">
-                    <i class="fa fa-icon"></i>
+                    <div class="box box3"><i class="fa fa-bars"></i></div>
                     <h2>Back End</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
                     <button>Get started</button>
                 </div>
             </div>
         </section>
-        <section class="section__four">
+        <section class="section__four ">
             <h1>Good design means good business</h1>
-            <div class="flex__images">
-                <div class="flex">
-                    <img src="./img/smarthome.jpg" alt="" />
+            <div class="flex__images ">
+                <div class="flex ">
+                    <img src="./img/smarthome.jpg " alt=" " />
                     <p>Full stack application</p>
                     <p><strong>Smart home dashboard</strong></p>
                 </div>
             </div>
-            <div class="flex__images">
-                <div class="flex">
-                    <img src="./img/onboard.png" alt="" />
+            <div class="flex__images ">
+                <div class="flex ">
+                    <img src="./img/onboard.png " alt=" " />
                     <p>UX/UI Design</p>
                     <p><strong>Onboard application</strong></p>
                 </div>
             </div>
-            <div class="flex__images">
-                <div class="flex">
-                    <img src="./img/booking.png" alt="" />
+            <div class="flex__images ">
+                <div class="flex ">
+                    <img src="./img/booking.png " alt=" " />
                     <p>Mobile application</p>
                     <p><strong>Booking system</strong></p>
                 </div>
             </div>
-            <div class="flex__images">
-                <div class="flex">
-                    <img src="./img/juice-product.png" alt="" />
+            <div class="flex__images ">
+                <div class="flex ">
+                    <img src="./img/juice-product.png " alt=" " />
                     <p>Front End application</p>
                     <p><strong>Juice product homepage</strong></p>
                 </div>
             </div>
-            <a href="#">See more -></a>
         </section>
-        <section class="section__five">
-            <div class="left__text">
-                <p>meet te team</p>
+        <div class="link__seemore "><a href="# ">See more -></a></div>
+        <section class="section__five ">
+            <div class="left__text ">
+                <p>Meet the team</p>
                 <h2>We are chilled and a laidback team</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="right__image">
-                <img src="./img/person1.png" alt="" />
-                <img src="./img/person2.png" alt="" />
-                <img src="./img/person3.png" alt="" /> </div>
+                <img src="./img/person3.png" alt="Photo" />
+                <img src="./img/person1.png" alt=" " />
+                <img src="./img/person2.png" alt=" " />
+            </div>
         </section>
-        <quote>“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”</quote>
-        <span><img src="./img/person4.png"  alt="" />
-			<p>Carlos Team</p>
-			<p>The Decorate Gatsby</p>
-		</span>
+        <section class="section__author">
+            <div class="quote">"Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team."</div>
+            <div class="author__details">
+                <img src="./img/person4.png" alt="Author photo" />
+                <div>
+                    <p class="author__name">Carlos Team</p>
+                    <p class="author__post">The Decorate Gatsby</p>
+                </div>
+            </div>
+        </section>
     </div>
-    <footer class=" footer ">
-        <ul>
-            <li>Home</li>
-            <li>Services</li>
-            <li>Our works</li>
-            <li>Clients</li>
-            <li>Contact</li>
-        </ul>
-        <ul>
-            <li></li>
-        </ul>
-        <ul>
-            <input type="text">
-        </ul>
-        <p>Anita JOSEPH @<a href=" https://devchallenges.io/ "> Dev Challenges</a></p>
+    <footer class=" footer">
+        <div>
+            <ul>
+                <li>Home</li>
+                <li>Services</li>
+                <li>Our works</li>
+                <li>Clients</li>
+                <li>Contact</li>
+            </ul>
+            <ul class="network__icons ">
+                <p><strong>Edie</strong></p>
+                <li><i class="fa fa-instagram "></i></li>
+                <li><i class="fa fa-linkedin "></i></li>
+                <li><i class="fa fa-twitter "></i></li>
+            </ul>
+            <p>
+                <label>Want us to contact you ?</label>
+                <input type="text "><button>Join</button>
+            </p>
+        </div>
+        <div>
+            <p>Anita JOSEPH @<a href=" https://devchallenges.io/ "> Dev Challenges</a></p>
+        </div>
     </footer>
-    <script src="index.js "></script>
+    <!-- <script src="index.js "></script> -->
 </body>
 
 </html>
