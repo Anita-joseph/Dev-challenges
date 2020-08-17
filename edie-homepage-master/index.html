@@ -15,7 +15,29 @@
     <div class="main">
         <header>
             <h1 class="logo">Edie</h1>
-            <a href="" class="nav__mobile"><i class="fa fa-bars"></i></a>
+            <a href="" class="nav__mobile">
+                <i id="nav__mobile" class="fa fa-bars"></i>
+            </a>
+            <div id="user__dropdown" class="user__dropdown">
+                <i id="close" class="fa fa-close"></i>
+                <ul id="mobile__navlist" class="mobile__navlist">
+                    <li class="nav-list-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-link" href="#service">Services</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-link" href="#ourworks">Our works</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-link" href="#client">Clients</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
             <nav class="navigation">
                 <ul class="nav-list">
                     <li class="nav-list-item">
@@ -165,6 +187,21 @@
             </div>
         </footer>
     </div>
+    <script>
+        let menu__collapse = document.getElementById('nav__mobile');
+        let dropdown = document.getElementById('user__dropdown');
+        let mobilnavlist = document.getElementById('mobile__navlist');
+        let close = document.getElementById('close');
+        close.addEventListener("click", function() {
+            dropdown.style.display = "none";
+        })
+        menu__collapse.addEventListener("click", function(event) {
+            event.preventDefault();
+
+            dropdown.style.display = "block";
+            mobilenavlist.style.color = "red";
+        });
+    </script>
 </body>
 
 </html>
