@@ -190,16 +190,13 @@
     <script>
         let menu__collapse = document.getElementById('nav__mobile');
         let dropdown = document.getElementById('user__dropdown');
-        let mobilnavlist = document.getElementById('mobile__navlist');
         let close = document.getElementById('close');
         close.addEventListener("click", function() {
             dropdown.style.display = "none";
-        })
+        });
         menu__collapse.addEventListener("click", function(event) {
             event.preventDefault();
-
             dropdown.style.display = "block";
-            mobilenavlist.style.color = "red";
         });
     </script>
 </body>
