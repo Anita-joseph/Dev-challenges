@@ -193,10 +193,12 @@
         let close = document.getElementById('close');
         close.addEventListener("click", function() {
             dropdown.style.display = "none";
+            menu__collapse.style.display = "block";
         });
         menu__collapse.addEventListener("click", function(event) {
             event.preventDefault();
             dropdown.style.display = "block";
+            this.style.display = "none";
         });
     </script>
 </body>
