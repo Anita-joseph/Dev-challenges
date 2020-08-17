@@ -468,7 +468,6 @@ p>strong {
 
 @media all and (min-width:700px) and (max-width:1200px) {
     .main {
-        border: 6px solid red;
         display: flex;
         flex-direction: column;
     }
