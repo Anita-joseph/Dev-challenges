@@ -466,7 +466,7 @@ p>strong {
 
 /* tablet version */
 
-@media all and (min-width:700px) and (max-width:1200px) {
+@media all and (max-width:1200px) {
     .main {
         display: flex;
         flex-direction: column;
@@ -504,10 +504,10 @@ p>strong {
         padding: 0;
     }
     .aboutus__section .txtInput>form input {
-        width: 65%;
+        width: 80%;
     }
     .txtInput form button {
-        right: 37%;
+        right: 25%;
     }
     .ourservices__section .grids {
         display: flex;
