@@ -467,6 +467,12 @@ p>strong {
     align-items: center;
 }
 
+@media (min-width: 1300px) {
+    section.clients__section {
+        margin: 0 7.6em;
+    }
+}
+
 
 /* tablet version */
 
