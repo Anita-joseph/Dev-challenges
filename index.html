@@ -15,9 +15,13 @@
         body {
             background: no-repeat url("./img/computer.jpg");
             background-size: cover;
+            background-position: center;
             margin: 0;
             padding: 0;
             color: white;
+            height: auto;
+            display: flex;
+            flex-direction: column;
         }
         
         img {
@@ -32,7 +36,7 @@
         
         .main__container {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-around;
             flex-wrap: wrap;
             margin: 10px;
             height: 100vh;
@@ -58,12 +62,14 @@
             opacity: 1;
         }
         
-        footer {
+        .footer {
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 29px;
-            color: palevioletred;
+            background-color: rgb(105, 163, 230);
+            font-size: 20px;
+            color: #fff;
+            position: relative;
         }
     </style>
 </head>
@@ -80,10 +86,13 @@
         <a href="./My-gallery/index.html"><img src="./img/gallery-screenshot.PNG" /></a>
         <a href="./Checkout-page-master/index.html"><img src="./img/checkout-page-screenshot.PNG" /></a>
         <a href="./edie-homepage-master/index.html"><img src="./img/edie-homepage-screenshot.png" /></a>
+
     </div>
-    <footer class="footer">
-        Anita JOSEPH @<a href="https://devchallenges.io/"> Dev Challenges</a>
-    </footer>
+    <div class="footer">
+        <footer>
+            Anita JOSEPH @<a href="https://devchallenges.io/"> Dev Challenges</a>
+        </footer>
+    </div>
 </body>
 
 </html>
