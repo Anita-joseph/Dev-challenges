@@ -5,9 +5,9 @@
 ### RESPONSIVE WEB DEVELOPER PATH
 #### 404-NOT-FOUND
 #### EDIE-HOMEPAGE
-#### INTERIOR-DECORATIOn
+#### INTERIOR-DECORATION
 #### GALLERY
 #### PORTFOLIO
-#### RECIPIEPAGE
-#### TEAMPAGE
+#### RECIPIE PAGE
+#### TEAM PAGE
 [![Netlify Status](https://api.netlify.com/api/v1/badges/246a07ef-2ece-4c18-bf10-c5f793dc9cdd/deploy-status)](https://app.netlify.com/sites/webdesign-rwd/deploys)
